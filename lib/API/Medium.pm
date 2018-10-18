@@ -7,7 +7,7 @@ use Module::Runtime 'use_module';
 
 # ABSTRACT: Talk with medium.com using their REST API
 
-our $VERSION = '0.900';
+our $VERSION = '0.901';
 
 has 'server' => (
     isa     => 'Str',
