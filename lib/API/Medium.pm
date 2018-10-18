@@ -56,6 +56,10 @@ sub get_current_user {
 sub create_post {
     my ( $self, $user_id, $post ) = @_;
 
+    die 'missing required user id' unless defined $user_id;
+    die 'missing required post'    unless defined $post;
+    die 'post has to be hashref'   unless ref($post) eq 'HASH';
+
     $post->{publishStatus} ||= 'draft';
 
     my $res = $self->_request( 'POST', 'users/' . $user_id . '/posts', $post );
