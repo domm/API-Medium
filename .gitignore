@@ -1,3 +1,3 @@
-cpanfile.snapshot
 local
 API-Medium*
+.build

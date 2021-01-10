@@ -1,13 +1,13 @@
 package API::Medium;
+
+# ABSTRACT: Talk with medium.com using their REST API
+# VERSION
+
 use Moose;
 use HTTP::Tiny;
 use Log::Any qw($log);
 use JSON::MaybeXS;
 use Module::Runtime 'use_module';
-
-# ABSTRACT: Talk with medium.com using their REST API
-
-our $VERSION = '0.901';
 
 has 'server' => (
     isa     => 'Str',
@@ -207,10 +207,6 @@ C<publishStatus> is set to 'draft' unless you pass in another value.
 =item * C<contributors>
 
 =back
-
-=head2 See Also
-
-Jonathan Stowe is working on a L<Perl 6 version|https://github.com/jonathanstowe/Medium-API>
 
 =head2 Thanks
 
