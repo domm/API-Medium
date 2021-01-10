@@ -1,6 +1,8 @@
 Revision history for API::Medium
 
 {{$NEXT}}
+
+0.902     2021-01-10 22:24:37+01:00
     - dist housekeeping, Dist::Zilla::PluginBundle::Author::DOMM
 
 0.901   2018-10-18T15:22:51
